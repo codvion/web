@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 Page Not Found | Aevonix</title>
+    <meta name="description"
+        content="The page you are looking for could not be found. Return to Aevonix home, explore our SEO, web development, branding and digital growth services, or contact our team." />
+    <meta name="keywords"
+        content="Aevonix 404, page not found, Aevonix services, digital growth agency, SEO services, web development, branding agency" />
+    <meta name="author" content="Aevonix" />
+    <meta name="robots" content="noindex, follow" />
+    <meta name="theme-color" content="#0b0b10" />
+    <link rel="canonical" href="https://aevonix.netlify.app/404" />
+    <link rel="icon" href="assets/images/favicon.webp" type="image/webp" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.webp" type="image/webp" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="404 Page Not Found | Aevonix" />
+    <meta property="og:description"
+        content="This Aevonix page could not be found. Explore our digital growth services or return to the homepage." />
+    <meta property="og:url" content="https://aevonix.netlify.app/404" />
+    <meta property="og:site_name" content="Aevonix" />
+    <meta property="og:image" content="https://aevonix.netlify.app/assets/images/og-image.webp" />
+    <meta property="og:image:alt" content="Aevonix page not found preview" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="404 Page Not Found | Aevonix" />
+    <meta name="twitter:description"
+        content="The page you requested is missing. Return to Aevonix or explore our services." />
+    <meta name="twitter:image" content="https://aevonix.netlify.app/assets/images/og-image.webp" />
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://aevonix.netlify.app/#organization",
+        "name": "Aevonix",
+        "url": "https://aevonix.netlify.app/",
+        "logo": "https://aevonix.netlify.app/assets/images/logo.webp",
+        "description": "Aevonix is a digital growth agency offering SEO, web development, UI UX design, branding and performance optimization services.",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61585100560566",
+          "https://www.instagram.com/codvion/",
+          "https://www.linkedin.com/in/codvion/",
+          "https://www.youtube.com/@codvion_pro"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+92-321-4086800",
+          "contactType": "customer support",
+          "areaServed": "Worldwide",
+          "availableLanguage": ["English", "Urdu"]
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://aevonix.netlify.app/404#webpage",
+        "name": "404 Page Not Found",
+        "url": "https://aevonix.netlify.app/404",
+        "isPartOf": { "@id": "https://aevonix.netlify.app/#website" },
+        "about": { "@id": "https://aevonix.netlify.app/#organization" }
+      }
+    ]
+  }
+  </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+    <style>
+        .error-page {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            padding: 150px 0 90px;
+            background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
+        }
+
+        .error-page::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(245, 197, 66, 0.09), transparent 70%);
+        }
+
+        .error-grid-lines {
+            position: absolute;
+            inset: 0;
+            background-image: linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+            background-size: 60px 60px;
+        }
+
+        .error-inner {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            max-width: 760px;
+            margin: 0 auto;
+        }
+
+        .error-code {
+            font-family: var(--font-head);
+            font-size: clamp(5rem, 16vw, 12rem);
+            font-weight: 900;
+            line-height: 0.9;
+            color: transparent;
+            background: linear-gradient(135deg, var(--gold), #ffdd85, var(--gold));
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: shimmer 4s linear infinite;
+            margin-bottom: 24px;
+            letter-spacing: -0.08em;
+        }
+
+        .error-title {
+            font-size: clamp(2rem, 4.5vw, 3.4rem);
+            margin-bottom: 18px;
+        }
+
+        .error-text {
+            max-width: 620px;
+            margin: 0 auto 34px;
+            font-size: 1.06rem;
+        }
+
+        .error-actions {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-bottom: 48px;
+        }
+
+        .error-suggestions {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 18px;
+            margin-top: 34px;
+        }
+
+        .error-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius-lg);
+            padding: 26px 22px;
+            text-align: left;
+            transition: all 0.3s var(--ease-out);
+        }
+
+        .error-card:hover {
+            transform: translateY(-4px);
+            border-color: var(--border-gold);
+            background: var(--gold-glass);
+        }
+
+        .error-card-icon {
+            width: 46px;
+            height: 46px;
+            border-radius: 13px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--gold-glass);
+            border: 1px solid var(--border-gold);
+            color: var(--gold);
+            margin-bottom: 16px;
+            font-size: 1.15rem;
+        }
+
+        .error-card h2 {
+            font-size: 1rem;
+            margin-bottom: 8px;
+        }
+
+        .error-card p {
+            font-size: 0.88rem;
+            margin-bottom: 16px;
+        }
+
+        .error-card a {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            color: var(--gold);
+            font-size: 0.84rem;
+            font-weight: 600;
+        }
+
+        @media (max-width: 900px) {
+            .error-suggestions {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .error-page {
+                padding: 120px 0 70px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav aria-label="Main navigation" id="navbar">
+            <div class="container">
+                <div class="nav-inner">
+                    <a aria-label="Aevonix Home" class="nav-logo" href="index">
+                        <img alt="Aevonix digital growth agency logo" class="nav-logo-img"
+                            src="assets/images/logo.webp" />
+                        <span>Aevo<span class="span">nix</span></span>
+                    </a>
+                    <ul class="nav-links" role="list">
+                        <li><a href="index">Home</a></li>
+                        <li><a href="about">About</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="faq">FAQ</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                    <div class="nav-cta">
+                        <a class="btn btn-ghost btn-sm" href="contact">Talk to Us</a>
+                        <a class="btn btn-primary btn-sm" href="services">Get Started →</a>
+                    </div>
+                    <button aria-controls="navMobile" aria-expanded="false" aria-label="Toggle mobile menu"
+                        class="nav-toggle" id="navToggle">
+                        <span></span><span></span><span></span>
+                    </button>
+                </div>
+            </div>
+            <nav aria-label="Mobile navigation" class="nav-mobile" id="navMobile">
+                <a href="index">Home</a>
+                <a href="about">About</a>
+                <a href="services">Services</a>
+                <a href="blog">Blog</a>
+                <a href="faq">FAQ</a>
+                <a href="contact">Contact</a>
+            </nav>
+        </nav>
+    </header>
+    <main>
+        <section class="error-page" aria-labelledby="error-heading">
+            <div class="glow-blob"
+                style="width:520px;height:520px;top:5%;left:-160px;background:radial-gradient(circle,rgba(245,197,66,0.12),transparent 65%)"
+                aria-hidden="true"></div>
+            <div class="glow-blob"
+                style="width:460px;height:460px;right:-140px;bottom:0;background:radial-gradient(circle,rgba(100,60,245,0.08),transparent 65%)"
+                aria-hidden="true"></div>
+            <div class="error-grid-lines" aria-hidden="true"></div>
+            <div class="container">
+                <div class="error-inner animate-fade-up">
+                    <span class="section-label">Page Not Found</span>
+                    <div class="error-code" aria-hidden="true">404</div>
+                    <h1 id="error-heading" class="error-title">Oops, This Page Took a Wrong Turn</h1>
+                    <p class="error-text">The page you are looking for may have been moved, renamed or removed. No
+                        tension jani, Aevonix still has the good stuff waiting for you.</p>
+                    <div class="error-actions">
+                        <a href="index" class="btn btn-primary">Back to Home <i class="fa-solid fa-arrow-right"></i></a>
+                        <a href="contact" class="btn btn-ghost">Contact Aevonix</a>
+                    </div>
+                    <div class="error-suggestions" aria-label="Helpful links">
+                        <article class="error-card reveal reveal-delay-1">
+                            <div class="error-card-icon" aria-hidden="true"><i class="fa-solid fa-chart-line"></i></div>
+                            <h2>Explore Services</h2>
+                            <p>Check SEO, web development, UI UX design, branding and performance services.</p>
+                            <a href="services">View Services <i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        <article class="error-card reveal reveal-delay-2">
+                            <div class="error-card-icon" aria-hidden="true"><i class="fa-solid fa-lightbulb"></i></div>
+                            <h2>Read Insights</h2>
+                            <p>Browse practical digital growth tips, website strategy and SEO guidance.</p>
+                            <a href="blog">Visit Blog <i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                        <article class="error-card reveal reveal-delay-3">
+                            <div class="error-card-icon" aria-hidden="true"><i class="fa-solid fa-circle-question"></i>
+                            </div>
+                            <h2>Need Help?</h2>
+                            <p>Find quick answers about Aevonix services, process, pricing and support.</p>
+                            <a href="faq">Open FAQ <i class="fa-solid fa-arrow-right"></i></a>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a aria-label="Aevonix Home" class="nav-logo footer-logo" href="index">
+                        <img alt="Aevonix digital growth agency logo" class="nav-logo-img"
+                            src="assets/images/logo.webp" />
+                        <span>Aevo<span class="span">nix</span></span>
+                    </a>
+                    <p>Aevonix helps ambitious brands grow with SEO, web development, UI UX design, branding and
+                        performance focused digital strategy.</p>
+                    <div aria-label="Social media links" class="footer-socials">
+                        <a aria-label="Aevonix WhatsApp" class="social-link" href="https://wa.me/923214086800"
+                            rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                        <a aria-label="Aevonix Facebook" class="social-link"
+                            href="https://www.facebook.com/profile.php?id=61585100560566" rel="noopener noreferrer"
+                            target="_blank"><i class="fa-brands fa-facebook"></i></a>
+                        <a aria-label="Aevonix Instagram" class="social-link" href="https://www.instagram.com/codvion/"
+                            rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                        <a aria-label="Aevonix LinkedIn" class="social-link" href="https://www.linkedin.com/in/codvion/"
+                            rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a aria-label="Aevonix YouTube" class="social-link" href="https://www.youtube.com/@codvion_pro"
+                            rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+                <nav aria-label="Company links" class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="about">About Us</a></li>
+                        <li><a href="services">Services</a></li>
+                        <li><a href="blog">Blog</a></li>
+                        <li><a href="contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav aria-label="Service links" class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="services">SEO Optimization</a></li>
+                        <li><a href="services">Web Development</a></li>
+                        <li><a href="services">UI UX Design</a></li>
+                        <li><a href="services">Branding</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <span>© 2026 Aevonix. All rights reserved.</span>
+                <span>Created By <a href="https://codvion.site" rel="noopener noreferrer"
+                        target="_blank">CodVion</a></span>
+            </div>
+        </div>
+    </footer>
+    <script src="main.js" defer></script>
+</body>
+
+</html>

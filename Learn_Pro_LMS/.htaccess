@@ -1,0 +1,25 @@
+Options -MultiViews
+
+DirectoryIndex index.php
+
+<FilesMatch "^(config\.php|database\.sql)$">
+    Require all denied
+</FilesMatch>
+
+RewriteEngine On
+RewriteBase /
+
+ErrorDocument 404 /404
+
+# Keep the home page clean.
+RewriteCond %{THE_REQUEST} \s/+index\.php[?\s] [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+# Redirect direct PHP requests to extensionless URLs while preserving POST requests.
+RewriteCond %{THE_REQUEST} \s/+(.+?)\.php[?\s] [NC]
+RewriteRule ^(.+?)\.php$ /$1 [R=307,L,NE]
+
+# Serve extensionless public pages from their matching PHP files.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.+?)/?$ $1.php [L,QSA]

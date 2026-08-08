@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Aevonix | Digital Growth Agency for SEO, Web Development and Branding</title>
+  <meta
+    content="Aevonix helps ambitious brands grow online with SEO, custom web development, UI UX design, branding and performance focused digital strategy."
+    name="description" />
+  <meta
+    content="Aevonix, digital growth agency, SEO agency, web development agency, UI UX design, branding agency, technical SEO, on page SEO, website performance optimization, digital marketing services, business growth agency"
+    name="keywords" />
+  <meta content="Aevonix" name="author" />
+  <meta content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" name="robots" />
+  <meta content="#0b0b10" name="theme-color" />
+  <link href="https://aevonix.netlify.app/" rel="canonical" />
+  <link href="assets/images/favicon.webp" rel="icon" type="image/webp" />
+  <link href="assets/images/favicon.webp" rel="apple-touch-icon" type="image/webp" />
+  <meta content="website" property="og:type" />
+  <meta content="Aevonix | SEO, Web Development and Digital Growth Agency" property="og:title" />
+  <meta
+    content="Grow your brand with Aevonix through search focused strategy, fast websites, conversion ready design and bold digital branding."
+    property="og:description" />
+  <meta content="https://aevonix.netlify.app/" property="og:url" />
+  <meta content="Aevonix" property="og:site_name" />
+  <meta content="https://aevonix.netlify.app/assets/images/og-image.webp" property="og:image" />
+  <meta content="Aevonix digital growth agency brand preview" property="og:image:alt" />
+  <meta content="en_US" property="og:locale" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="Aevonix | Digital Growth Agency" name="twitter:title" />
+  <meta content="SEO, web development, UI UX design and branding built for measurable online growth."
+    name="twitter:description" />
+  <meta content="https://aevonix.netlify.app/assets/images/og-image.webp" name="twitter:image" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://aevonix.netlify.app/#organization",
+        "name": "Aevonix",
+        "url": "https://aevonix.netlify.app/",
+        "logo": "https://aevonix.netlify.app/assets/images/logo.webp",
+        "description": "Aevonix is a digital growth agency offering SEO, web development, UI UX design, branding and performance optimization services.",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61585100560566",
+          "https://www.instagram.com/codvion/",
+          "https://www.linkedin.com/in/codvion/",
+          "https://www.youtube.com/@codvion_pro"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+92-321-4086800",
+          "contactType": "customer support",
+          "areaServed": "Worldwide",
+          "availableLanguage": ["English", "Urdu"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://aevonix.netlify.app/#website",
+        "url": "https://aevonix.netlify.app/",
+        "name": "Aevonix",
+        "publisher": { "@id": "https://aevonix.netlify.app/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "https://aevonix.netlify.app/blog?s={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://aevonix.netlify.app/#professionalservice",
+        "name": "Aevonix Digital Growth Agency",
+        "url": "https://aevonix.netlify.app/",
+        "image": "https://aevonix.netlify.app/assets/images/og-image.webp",
+        "priceRange": "$$",
+        "areaServed": "Worldwide",
+        "serviceType": [
+          "SEO Optimization",
+          "Web Development",
+          "UI UX Design",
+          "Branding",
+          "Performance Optimization",
+          "Digital Growth Strategy"
+        ],
+        "provider": { "@id": "https://aevonix.netlify.app/#organization" }
+      }
+    ]
+  }
+  </script>
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <style>
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+      padding: 120px 0 80px;
+    }
+
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+    }
+
+    .hero-glow-1 {
+      width: 700px;
+      height: 700px;
+      top: -200px;
+      left: -100px;
+      background: radial-gradient(circle, rgba(245, 197, 66, 0.12) 0%, transparent 65%);
+    }
+
+    .hero-glow-2 {
+      width: 500px;
+      height: 500px;
+      bottom: -100px;
+      right: -100px;
+      background: radial-gradient(circle, rgba(100, 60, 245, 0.08) 0%, transparent 65%);
+    }
+
+    .hero-grid-lines {
+      position: absolute;
+      inset: 0;
+      background-image:
+        linear-gradient(rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .hero-inner {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--gold-glass);
+      border: 1px solid var(--border-gold);
+      border-radius: 100px;
+      padding: 6px 14px 6px 8px;
+      font-size: 0.78rem;
+      font-weight: 500;
+      color: var(--gold);
+      margin-bottom: 28px;
+    }
+
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--gold);
+      animation: pulseDot 2s ease-in-out infinite;
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 5.5vw, 5.5rem);
+      margin-bottom: 20px;
+      line-height: 1.1;
+    }
+
+    .hero-headline-line {
+      display: block;
+      text-align: center;
+    }
+
+    .hero-headline-accent {
+      display: block;
+      background: linear-gradient(135deg, var(--gold) 0%, #ffdd85 50%, var(--gold) 100%);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 4s linear infinite;
+      text-align: center;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      line-height: 1.75;
+      margin-bottom: 36px;
+      max-width: 520px;
+      text-align: center;
+    }
+
+    .hero-cta {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .stats-bar {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      padding: 40px 0;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+    }
+
+    .stat-item {
+      text-align: center;
+      padding: 0 24px;
+      position: relative;
+    }
+
+    .stat-item+.stat-item::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 50px;
+      width: 1px;
+      background: var(--border);
+    }
+
+    .stat-num {
+      font-family: var(--font-head);
+      font-size: 2.4rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+      margin-bottom: 6px;
+    }
+
+    .stat-lbl {
+      font-size: 0.85rem;
+      color: var(--text-dim);
+    }
+
+    .services-preview-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 56px;
+    }
+
+    .svc-card {
+      padding: 32px;
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      transition: all 0.35s var(--ease-out);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .svc-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(circle at 0% 100%, var(--gold-glass), transparent 60%);
+      opacity: 0;
+      transition: opacity 0.35s;
+    }
+
+    .svc-card:hover::before {
+      opacity: 1;
+    }
+
+    .svc-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-5px);
+      box-shadow: 0 24px 64px rgba(0, 0, 0, 0.5);
+    }
+
+    .svc-icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: var(--gold-glass);
+      border: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 22px;
+      font-size: 1.4rem;
+      position: relative;
+    }
+
+    .svc-card h3 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      font-weight: 700;
+    }
+
+    .svc-card p {
+      font-size: 0.9rem;
+      line-height: 1.65;
+    }
+
+    .svc-arrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-top: 18px;
+      transition: gap 0.2s;
+    }
+
+    .svc-card:hover .svc-arrow {
+      gap: 10px;
+    }
+
+    .why-section {
+      background: var(--bg-2);
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 80px;
+      align-items: center;
+    }
+
+    .why-visual {
+      position: relative;
+      height: 480px;
+    }
+
+    .why-main-card {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 280px;
+      background: rgba(14, 14, 20, 0.95);
+      border: 1px solid var(--border-gold);
+      border-radius: 20px;
+      padding: 28px;
+      backdrop-filter: blur(16px);
+    }
+
+    .why-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 20px;
+    }
+
+    .why-card-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      background: var(--gold-glass);
+      border: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+    }
+
+    .why-card-title {
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .why-metric {
+      display: flex;
+      align-items: baseline;
+      gap: 6px;
+      margin-bottom: 12px;
+    }
+
+    .why-metric-val {
+      font-family: var(--font-head);
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--gold);
+      line-height: 1;
+    }
+
+    .why-metric-unit {
+      color: var(--text-dim);
+      font-size: 0.9rem;
+    }
+
+    .why-progress {
+      height: 6px;
+      background: var(--surface-2);
+      border-radius: 100px;
+      overflow: hidden;
+      margin-bottom: 8px;
+    }
+
+    .why-progress-bar {
+      height: 100%;
+      border-radius: 100px;
+      background: linear-gradient(90deg, var(--gold-dim), var(--gold));
+      box-shadow: 0 0 12px rgba(245, 197, 66, 0.4);
+    }
+
+    .why-progress-lbl {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.75rem;
+      color: var(--text-faint);
+    }
+
+    .why-float-card {
+      position: absolute;
+      background: rgba(14, 14, 20, 0.9);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 14px 18px;
+      backdrop-filter: blur(12px);
+      font-size: 0.82rem;
+    }
+
+    .why-float-card-1 {
+      top: 40px;
+      left: 0;
+      animation: float 4.5s 0.3s ease-in-out infinite;
+    }
+
+    .why-float-card-2 {
+      bottom: 40px;
+      right: 0;
+      animation: float 5s 0.8s ease-in-out infinite;
+    }
+
+    .float-val {
+      font-family: var(--font-head);
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+    }
+
+    .float-lbl {
+      color: var(--text-dim);
+      margin-top: 2px;
+    }
+
+    .why-points {
+      display: flex;
+      flex-direction: column;
+      gap: 28px;
+      margin-top: 40px;
+    }
+
+    .why-point {
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .why-point-icon {
+      width: 44px;
+      height: 44px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      background: var(--gold-glass);
+      border: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.1rem;
+      margin-top: 2px;
+    }
+
+    .why-point h3 {
+      font-size: 1rem;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    .why-point p {
+      font-size: 0.88rem;
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 0;
+      margin-top: 60px;
+      position: relative;
+    }
+
+    .process-steps::before {
+      content: '';
+      position: absolute;
+      top: 32px;
+      left: calc(12.5%);
+      right: calc(12.5%);
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--border-gold), var(--border-gold), transparent);
+    }
+
+    .process-step {
+      text-align: center;
+      padding: 0 16px;
+      position: relative;
+    }
+
+    .step-num {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: var(--bg-3);
+      border: 1px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-family: var(--font-head);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold);
+      position: relative;
+      z-index: 1;
+    }
+
+    .step-num::after {
+      content: '';
+      position: absolute;
+      inset: -4px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(245, 197, 66, 0.12), transparent 70%);
+    }
+
+    .process-step h3 {
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+      font-weight: 600;
+    }
+
+    .process-step p {
+      font-size: 0.85rem;
+    }
+
+    .testimonials-section {
+      background: var(--bg-2);
+    }
+
+    .testimonials-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-top: 56px;
+    }
+
+    .testi-card {
+      padding: 32px;
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      transition: all 0.35s var(--ease-out);
+    }
+
+    .testi-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-4px);
+    }
+
+    .testi-stars {
+      display: flex;
+      gap: 3px;
+      margin-bottom: 20px;
+    }
+
+    .testi-stars span {
+      color: var(--gold);
+      font-size: 0.95rem;
+    }
+
+    .testi-quote {
+      font-size: 0.95rem;
+      line-height: 1.7;
+      color: var(--text);
+      margin-bottom: 24px;
+      font-style: italic;
+    }
+
+    .testi-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .testi-avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2a2a4a, #3a3a6a);
+      border: 2px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--gold);
+    }
+
+    .testi-name {
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+
+    .testi-role {
+      font-size: 0.78rem;
+      color: var(--text-dim);
+    }
+
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-top: 56px;
+    }
+
+    .blog-card {
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: all 0.35s var(--ease-out);
+    }
+
+    .blog-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .blog-thumb {
+      height: 180px;
+      position: relative;
+      overflow: hidden;
+      background: var(--bg-3);
+    }
+
+    .blog-thumb-inner {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .blog-thumb-icon {
+      font-size: 3rem;
+      opacity: 0.25;
+    }
+
+    .blog-thumb-gradient {
+      position: absolute;
+      inset: 0;
+    }
+
+    .blog-cat {
+      position: absolute;
+      bottom: 12px;
+      left: 12px;
+      background: var(--gold);
+      color: #0a0a0e;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 100px;
+    }
+
+    .blog-body {
+      padding: 24px;
+    }
+
+    .blog-meta {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-size: 0.78rem;
+      color: var(--text-faint);
+      margin-bottom: 12px;
+    }
+
+    .blog-meta span {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+
+    .blog-card h3 {
+      font-size: 1rem;
+      margin-bottom: 10px;
+      font-weight: 600;
+      line-height: 1.4;
+    }
+
+    .blog-card p {
+      font-size: 0.86rem;
+      line-height: 1.65;
+    }
+
+    .blog-read-more {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-top: 16px;
+      transition: gap 0.2s;
+    }
+
+    .blog-card:hover .blog-read-more {
+      gap: 10px;
+    }
+
+    .cta-section {
+      position: relative;
+      overflow: hidden;
+      text-align: center;
+    }
+
+    .cta-glow {
+      width: 600px;
+      height: 400px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: radial-gradient(circle, rgba(245, 197, 66, 0.1), transparent 65%);
+    }
+
+    .cta-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .cta-inner h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      margin-bottom: 16px;
+    }
+
+    .cta-inner p {
+      font-size: 1.05rem;
+      margin-bottom: 36px;
+    }
+
+    .cta-btns {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    @media (max-width: 1024px) {
+
+
+      .why-grid {
+        grid-template-columns: 1fr;
+        gap: 48px;
+      }
+
+      .hero-orb {
+        width: 320px;
+        height: 320px;
+      }
+
+      .services-preview-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      .stat-item+.stat-item::before {
+        display: none;
+      }
+
+      .testimonials-grid,
+      .blog-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .process-steps {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 32px;
+      }
+
+      .process-steps::before {
+        display: none;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .hero {
+        padding: 100px 0 60px;
+      }
+
+      .stat-num {
+        font-size: 1.5rem;
+      }
+
+      .hero-orb {
+        width: 260px;
+        height: 260px;
+      }
+
+      .orb-core {
+        width: 160px;
+        height: 160px;
+      }
+
+      .orb-logo {
+        font-size: 1.5rem;
+      }
+
+      .services-preview-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .testimonials-grid,
+      .blog-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .why-visual {
+        height: 320px;
+      }
+
+      .why-main-card {
+        width: 240px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation" id="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <a aria-label="Aevonix Home" class="nav-logo" href="index">
+            <img alt="Aevonix digital growth agency logo" class="nav-logo-img" src="assets/images/logo.webp" />
+            <span>Aevo<span class="span">nix</span></span>
+          </a>
+          <ul class="nav-links" role="list">
+            <li><a href="index">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a class="btn btn-ghost btn-sm" href="contact">Talk to Us</a>
+            <a class="btn btn-primary btn-sm" href="services">Get Started →</a>
+          </div>
+          <button aria-controls="navMobile" aria-expanded="false" aria-label="Toggle mobile menu" class="nav-toggle"
+            id="navToggle">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <nav aria-label="Mobile navigation" class="nav-mobile" id="navMobile">
+        <a href="index">Home</a>
+        <a href="about">About</a>
+        <a href="services">Services</a>
+        <a href="blog">Blog</a>
+        <a href="faq">FAQ</a>
+        <a href="contact">Contact</a>
+      </nav>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="hero-headline" class="hero">
+      <div class="hero-bg">
+        <div class="glow-blob hero-glow-1"></div>
+        <div class="glow-blob hero-glow-2"></div>
+        <div aria-hidden="true" class="hero-grid-lines"></div>
+      </div>
+      <div class="container">
+        <div class="hero-inner animate-fade-up">
+          <div aria-live="polite" class="hero-badge" role="status">
+            <span aria-hidden="true" class="hero-badge-dot"></span>
+            Smart Digital Growth for Ambitious Brands
+          </div>
+          <h1 id="hero-headline">
+            <span class="hero-headline-line">Grow Faster With</span>
+            <span class="hero-headline-accent">Aevonix</span>
+            <span class="hero-headline-line">Digital Solutions</span>
+          </h1>
+          <p>Aevonix builds search friendly websites, powerful brand identities and practical growth systems that help
+            your business attract better traffic, earn trust and convert visitors into real customers.</p>
+          <div class="hero-cta">
+            <a class="btn btn-primary" href="services">
+              Explore Our Services
+              <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24">
+                <path d="M5 12h14M12 5l7 7-7 7"></path>
+              </svg>
+            </a>
+            <a class="btn btn-ghost" href="about">About Aevonix</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section aria-label="Key statistics" class="stats-bar">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item reveal">
+            <div class="stat-num" data-suffix="+" data-target="200">0</div>
+            <div class="stat-lbl">Digital Projects Delivered</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-1">
+            <div class="stat-num" data-suffix="%" data-target="98">0</div>
+            <div class="stat-lbl">Client Satisfaction</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-2">
+            <div class="stat-num" data-suffix="x" data-target="3.2">0</div>
+            <div class="stat-lbl">Average Growth Lift</div>
+          </div>
+          <div class="stat-item reveal reveal-delay-3">
+            <div class="stat-num" data-suffix=" yrs" data-target="6">0</div>
+            <div class="stat-lbl">Years of Experience</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="services-heading" class="section-pad">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">Aevonix Services</span>
+          <h2 class="section-heading" id="services-heading">Digital Services Built for <span class="text-gold">Real
+              Growth</span></h2>
+          <p class="section-sub" style="margin:0 auto">We create websites, SEO systems and brand experiences that make
+            your business easier to find, easier to trust and easier to choose.</p>
+        </div>
+        <div class="services-preview-grid">
+          <article class="svc-card reveal reveal-delay-1">
+            <div aria-hidden="true" class="svc-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+            <h3>SEO Optimization</h3>
+            <p>Technical SEO, on page optimization, content planning and authority building designed to improve rankings
+              and bring qualified visitors to your website.
+            </p>
+            <a class="svc-arrow" href="services#seo">Learn more →</a>
+          </article>
+          <article class="svc-card reveal reveal-delay-2">
+            <div aria-hidden="true" class="svc-icon"><i class="fa-solid fa-code"></i></div>
+            <h3>Web Development</h3>
+            <p>Fast, responsive and SEO ready websites built with clean structure, smooth user experience and strong
+              performance across every device.
+            </p>
+            <a class="svc-arrow" href="services#web">Learn more →</a>
+          </article>
+          <article class="svc-card reveal reveal-delay-3">
+            <div aria-hidden="true" class="svc-icon"><i class="fa-solid fa-pen-nib"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Clean UI UX design that guides visitors naturally, builds trust quickly and turns attention into action.
+            </p>
+            <a class="svc-arrow" href="services#design">Learn more →</a>
+          </article>
+          <article class="svc-card reveal reveal-delay-1">
+            <div aria-hidden="true" class="svc-icon"><i class="fa-solid fa-wand-magic-sparkles"></i></div>
+            <h3>Branding</h3>
+            <p>Memorable brand identity, visual direction and messaging that make your business feel premium, clear and
+              trustworthy.</p>
+            <a class="svc-arrow" href="services#branding">Learn more →</a>
+          </article>
+          <article class="svc-card reveal reveal-delay-2">
+            <div aria-hidden="true" class="svc-icon"><i class="fa-solid fa-gauge-high"></i></div>
+            <h3>Performance Optimization</h3>
+            <p>Speed improvements, Core Web Vitals fixes and clean technical optimization so your site feels smooth and
+              performs better in search.</p>
+            <a class="svc-arrow" href="services#perf">Learn more →</a>
+          </article>
+          <article class="svc-card reveal reveal-delay-3">
+            <div aria-hidden="true" class="svc-icon"><i class="fa-solid fa-chart-line"></i></div>
+            <h3>Growth Strategy</h3>
+            <p>Practical digital growth plans combining SEO, content, design and analytics so every step supports
+              business results.</p>
+            <a class="svc-arrow" href="services#growth">Learn more →</a>
+          </article>
+        </div>
+        <div class="text-center" style="margin-top:40px">
+          <a class="btn btn-ghost" href="services">View All Services →</a>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="why-heading" class="section-pad why-section">
+      <div class="container">
+        <div class="why-grid">
+          <div aria-hidden="true" class="why-visual reveal">
+            <div class="glow-blob"
+              style="width:300px;height:300px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(245,197,66,0.08),transparent 65%);">
+            </div>
+            <div class="why-main-card">
+              <div class="why-card-header">
+                <div class="why-card-icon"><i class="fa-solid fa-chart-simple"></i></div>
+                <div class="why-card-title">SEO Performance</div>
+              </div>
+              <div class="why-metric">
+                <span class="why-metric-val" data-suffix="" data-target="340">0</span>
+                <span class="why-metric-unit">% traffic lift</span>
+              </div>
+              <div class="why-progress">
+                <div class="why-progress-bar" style="width:85%"></div>
+              </div>
+              <div class="why-progress-lbl"><span>Organic Growth</span><span>85%</span></div>
+            </div>
+            <div class="why-float-card why-float-card-1">
+              <div class="float-val">⚡ 99</div>
+              <div class="float-lbl">Lighthouse Score</div>
+            </div>
+            <div class="why-float-card why-float-card-2">
+              <div class="float-val">🏆 #1</div>
+              <div class="float-lbl">SERP Position</div>
+            </div>
+          </div>
+          <div class="why-content">
+            <span class="section-label reveal">Why Choose Aevonix</span>
+            <h2 class="section-heading reveal" id="why-heading">Where Smart Strategy Meets <span class="text-gold">Clean
+                Execution</span></h2>
+            <p class="reveal" style="margin-bottom:0">We bring strategy, design, development and SEO together so your
+              website does more than look good. It works hard for your brand every day.</p>
+            <div class="why-points">
+              <div class="why-point reveal reveal-delay-1">
+                <div aria-hidden="true" class="why-point-icon"><i class="fa-solid fa-bullseye"></i></div>
+                <div>
+                  <h3>Business Focused Approach</h3>
+                  <p>Every page, design choice and SEO task connects back to traffic, leads, sales and long term brand
+                    growth.</p>
+                </div>
+              </div>
+              <div class="why-point reveal reveal-delay-2">
+                <div aria-hidden="true" class="why-point-icon"><i class="fa-solid fa-microscope"></i></div>
+                <div>
+                  <h3>Research Based Decisions</h3>
+                  <p>We study your market, audit your website and improve what matters instead of throwing random tricks
+                    at the wall.</p>
+                </div>
+              </div>
+              <div class="why-point reveal reveal-delay-3">
+                <div aria-hidden="true" class="why-point-icon"><i class="fa-solid fa-handshake"></i></div>
+                <div>
+                  <h3>Clear Communication</h3>
+                  <p>You get simple updates, honest guidance and a team that actually explains what is happening without
+                    confusing tech drama.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="process-heading" class="section-pad">
+      <div class="container text-center">
+        <span class="section-label reveal">How We Work</span>
+        <h2 class="section-heading reveal" id="process-heading">From Idea to <span class="text-gold">Online
+            Growth</span></h2>
+        <p class="section-sub reveal" style="margin:0 auto">A simple process that turns your goals into a polished
+          website, stronger SEO and a brand experience people remember.</p>
+        <div class="process-steps">
+          <div class="process-step reveal reveal-delay-1">
+            <div aria-label="Step 1" class="step-num">01</div>
+            <h3>Discovery and Audit</h3>
+            <p>We understand your business, audience, competitors and current website performance before making a plan.
+            </p>
+          </div>
+          <div class="process-step reveal reveal-delay-2">
+            <div aria-label="Step 2" class="step-num">02</div>
+            <h3>Strategy and Roadmap</h3>
+            <p>We create a clear roadmap for SEO, website structure, content and design improvements.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-3">
+            <div aria-label="Step 3" class="step-num">03</div>
+            <h3>Build and Optimize</h3>
+            <p>We design, develop, optimize and prepare your digital presence for a confident launch.</p>
+          </div>
+          <div class="process-step reveal reveal-delay-4">
+            <div aria-label="Step 4" class="step-num">04</div>
+            <h3>Measure and Grow</h3>
+            <p>We track performance, improve weak points and help your online presence keep growing after launch.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="testi-heading" class="section-pad testimonials-section">
+      <div class="container">
+        <div class="text-center reveal">
+          <span class="section-label">Client Feedback</span>
+          <h2 class="section-heading" id="testi-heading">Brands Growing With <span class="text-gold">Aevonix</span></h2>
+        </div>
+        <div class="testimonials-grid">
+          <article class="testi-card reveal reveal-delay-1">
+            <div aria-label="5 stars" class="testi-stars">
+              <span aria-hidden="true">★★★★★</span>
+            </div>
+            <blockquote class="testi-quote">"Aevonix took our organic traffic from 2K to 28K monthly visitors in just 6
+              months. Their SEO work is genuinely world-class."</blockquote>
+            <div class="testi-author">
+              <div aria-hidden="true" class="testi-avatar">AK</div>
+              <div>
+                <div class="testi-name">Ahmad Khan</div>
+                <div class="testi-role">CEO, TechLaunch Pro</div>
+              </div>
+            </div>
+          </article>
+          <article class="testi-card reveal reveal-delay-2">
+            <div aria-label="5 stars" class="testi-stars"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote class="testi-quote">"The website they built for us scores 99 on Lighthouse and our bounce rate
+              dropped by 40%. Beautiful work, fast delivery."</blockquote>
+            <div class="testi-author">
+              <div aria-hidden="true" class="testi-avatar">SR</div>
+              <div>
+                <div class="testi-name">Sara Rizvi</div>
+                <div class="testi-role">Founder, NovaBrand Studio</div>
+              </div>
+            </div>
+          </article>
+          <article class="testi-card reveal reveal-delay-3">
+            <div aria-label="5 stars" class="testi-stars"><span aria-hidden="true">★★★★★</span></div>
+            <blockquote class="testi-quote">"Their branding work completely transformed how people perceive our company.
+              We look like a Fortune 500 now. Highly recommend."</blockquote>
+            <div class="testi-author">
+              <div aria-hidden="true" class="testi-avatar">JM</div>
+              <div>
+                <div class="testi-name">James Miller</div>
+                <div class="testi-role">Marketing Dir., VaultX Finance</div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="blog-heading" class="section-pad">
+      <div class="container">
+        <div class="reveal"
+          style="display:flex;align-items:flex-end;justify-content:space-between;flex-wrap:wrap;gap:20px;margin-bottom:0">
+          <div>
+            <span class="section-label">Blog</span>
+            <h2 class="section-heading" id="blog-heading">Latest Digital Growth <span class="text-gold">Insights</span>
+            </h2>
+          </div>
+          <a class="btn btn-ghost" href="blog">View All Posts →</a>
+        </div>
+        <div class="blog-grid">
+          <article class="blog-card reveal reveal-delay-1">
+            <div class="blog-thumb">
+              <div class="blog-thumb-inner">
+                <div aria-hidden="true" class="blog-thumb-icon"><i class="fa-solid fa-magnifying-glass-chart"></i></div>
+              </div>
+              <div class="blog-thumb-gradient"
+                style="background:linear-gradient(135deg,rgba(245,197,66,0.15),rgba(6,6,8,0.8))"></div>
+              <span class="blog-cat">SEO</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span>📅 May 8, 2025</span>
+                <span>⏱ 5 min read</span>
+              </div>
+              <h3>Core Web Vitals 2025: What Changed and How to Win</h3>
+              <p>Google's latest ranking signals and the exact optimizations you need to score 95+ across all metrics.
+              </p>
+              <a class="blog-read-more" href="blog">Read Article →</a>
+            </div>
+          </article>
+          <article class="blog-card reveal reveal-delay-2">
+            <div class="blog-thumb">
+              <div class="blog-thumb-inner">
+                <div aria-hidden="true" class="blog-thumb-icon"><i class="fa-solid fa-lightbulb"></i></div>
+              </div>
+              <div class="blog-thumb-gradient"
+                style="background:linear-gradient(135deg,rgba(100,60,245,0.15),rgba(6,6,8,0.8))"></div>
+              <span class="blog-cat">Strategy</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span>📅 May 2, 2025</span>
+                <span>⏱ 7 min read</span>
+              </div>
+              <h3>The Brand Moat: How to Make Your Business Impossible to Copy</h3>
+              <p>Strategic brand differentiation in saturated markets frameworks from 6 years of agency experience.
+              </p>
+              <a class="blog-read-more" href="blog">Read Article →</a>
+            </div>
+          </article>
+          <article class="blog-card reveal reveal-delay-3">
+            <div class="blog-thumb">
+              <div class="blog-thumb-inner">
+                <div aria-hidden="true" class="blog-thumb-icon"><i class="fa-solid fa-bolt"></i></div>
+              </div>
+              <div class="blog-thumb-gradient"
+                style="background:linear-gradient(135deg,rgba(245,100,66,0.15),rgba(6,6,8,0.8))"></div>
+              <span class="blog-cat">Dev</span>
+            </div>
+            <div class="blog-body">
+              <div class="blog-meta">
+                <span>📅 Apr 28, 2025</span>
+                <span>⏱ 6 min read</span>
+              </div>
+              <h3>Next.js 15 + ISR: Build Sites That Score 100 on Lighthouse</h3>
+              <p>Complete performance playbook for shipping production-grade sites with perfect Lighthouse scores.</p>
+              <a class="blog-read-more" href="blog">Read Article →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="cta-heading" class="section-pad cta-section">
+      <div aria-hidden="true" class="glow-blob cta-glow"></div>
+      <div class="container">
+        <div class="cta-inner reveal">
+          <span class="section-label" style="justify-content:center">Ready to Build Your Brand?</span>
+          <h2 id="cta-heading">Let Aevonix Build Your <span class="text-gold">Digital Growth Engine</span></h2>
+          <p>Start with a clear digital audit, then move toward a faster website, stronger SEO and a brand that feels
+            impossible to ignore.</p>
+          <div class="cta-btns">
+            <a class="btn btn-primary" href="contact">Start Your Project</a>
+            <a class="btn btn-ghost" href="about">Explore Our Agency</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a aria-label="Aevonix Home" class="nav-logo footer-logo" href="index">
+            <img alt="Aevonix digital growth agency logo" class="nav-logo-img" src="assets/images/logo.webp" />
+            <span>Aevo<span class="span">nix</span></span>
+          </a>
+          <p>Aevonix helps ambitious brands grow with SEO, web development, UI UX design, branding and performance
+            focused digital strategy.</p>
+          <div aria-label="Social media links" class="footer-socials">
+            <a aria-label="Aevonix WhatsApp" class="social-link" href="https://wa.me/923214086800"
+              rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a aria-label="Aevonix Facebook" class="social-link"
+              href="https://www.facebook.com/profile.php?id=61585100560566" rel="noopener noreferrer" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a aria-label="Aevonix Instagram" class="social-link" href="https://www.instagram.com/codvion/"
+              rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a aria-label="Aevonix LinkedIn" class="social-link" href="https://www.linkedin.com/in/codvion/"
+              rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a aria-label="Aevonix YouTube" class="social-link" href="https://www.youtube.com/@codvion_pro"
+              rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <nav aria-label="Company links" class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about">About Us</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Service links" class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services">SEO Optimization</a></li>
+            <li><a href="services">Web Development</a></li>
+            <li><a href="services">UI UX Design</a></li>
+            <li><a href="services">Branding</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Aevonix. All rights reserved.</span>
+        <span>Created By <a href="https://codvion.site" rel="noopener noreferrer" target="_blank">CodVion</a></span>
+      </div>
+    </div>
+  </footer>
+  <script defer="" src="main.js"></script>
+</body>
+
+</html>

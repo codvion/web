@@ -1,0 +1,1473 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Aevonix Blog | SEO, Web Development and Digital Growth Insights</title>
+  <meta
+    content="Read practical SEO, web development, UI UX design, branding and digital growth insights from Aevonix. Helpful guides for brands that want better rankings, faster websites and stronger online visibility."
+    name="description" />
+  <meta
+    content="Aevonix blog, digital growth blog, SEO tips, web development insights, UI UX design blog, branding strategy, Core Web Vitals, technical SEO, website performance, digital agency blog"
+    name="keywords" />
+  <meta content="Aevonix" name="author" />
+  <meta content="index, follow, max-image-preview:large" name="robots" />
+  <meta content="#0b0b10" name="theme-color" />
+  <link href="https://aevonix.netlify.app/blog" rel="canonical" />
+  <link href="assets/images/favicon.webp" rel="icon" type="image/webp" />
+  <meta content="website" property="og:type" />
+  <meta content="Aevonix Blog | SEO and Digital Growth Insights" property="og:title" />
+  <meta
+    content="Actionable articles on SEO, web development, UI UX design, branding and website performance from the Aevonix team."
+    property="og:description" />
+  <meta content="https://aevonix.netlify.app/blog" property="og:url" />
+  <meta content="Aevonix" property="og:site_name" />
+  <meta content="https://aevonix.netlify.app/assets/images/og-image.webp" property="og:image" />
+  <meta content="Aevonix digital growth agency blog cover image" property="og:image:alt" />
+  <meta content="summary_large_image" name="twitter:card" />
+  <meta content="Aevonix Blog | SEO and Digital Growth Insights" name="twitter:title" />
+  <meta content="Helpful guides for better rankings, faster websites and stronger digital growth."
+    name="twitter:description" />
+  <meta content="https://aevonix.netlify.app/assets/images/og-image.webp" name="twitter:image" />
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;400;500;600;700;800;900&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+    rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://aevonix.netlify.app/#organization",
+        "name": "Aevonix",
+        "url": "https://aevonix.netlify.app",
+        "logo": "https://aevonix.netlify.app/assets/images/logo.webp",
+        "description": "Aevonix is a digital growth agency offering SEO, web development, UI UX design, branding and performance optimization.",
+        "sameAs": [
+          "https://www.facebook.com/profile.php?id=61585100560566",
+          "https://www.instagram.com/codvion/",
+          "https://www.linkedin.com/in/codvion/",
+          "https://www.youtube.com/@codvion_pro"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://aevonix.netlify.app/#website",
+        "url": "https://aevonix.netlify.app",
+        "name": "Aevonix",
+        "publisher": {
+          "@id": "https://aevonix.netlify.app/#organization"
+        }
+      },
+      {
+        "@type": "Blog",
+        "@id": "https://aevonix.netlify.app/blog#blog",
+        "name": "Aevonix Blog",
+        "url": "https://aevonix.netlify.app/blog",
+        "description": "Digital growth insights on SEO, web development, UI UX design, branding and website performance.",
+        "publisher": {
+          "@id": "https://aevonix.netlify.app/#organization"
+        },
+        "blogPost": [
+          {
+            "@type": "BlogPosting",
+            "headline": "Core Web Vitals 2026: The Practical Guide to Faster Rankings and Better Conversions",
+            "datePublished": "2026-05-08",
+            "dateModified": "2026-05-08",
+            "author": {
+              "@type": "Person",
+              "name": "Aevonix Team"
+            },
+            "publisher": {
+              "@id": "https://aevonix.netlify.app/#organization"
+            },
+            "image": "https://aevonix.netlify.app/assets/images/og-image.webp",
+            "mainEntityOfPage": "https://aevonix.netlify.app/blog#article-preview"
+          }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://aevonix.netlify.app/blog#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://aevonix.netlify.app/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blog",
+            "item": "https://aevonix.netlify.app/blog"
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+  <style>
+    .page-hero {
+      padding: 160px 0 90px;
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(180deg, var(--bg-2) 0%, var(--bg) 100%);
+    }
+
+    .page-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 60% 50% at 50% 0%, rgba(245, 197, 66, 0.07), transparent);
+    }
+
+    .page-hero-grid {
+      position: absolute;
+      inset: 0;
+      background-image: linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px), linear-gradient(90deg, rgba(255, 255, 255, 0.018) 1px, transparent 1px);
+      background-size: 60px 60px;
+    }
+
+    .page-hero-inner {
+      position: relative;
+      z-index: 1;
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto;
+    }
+
+    .page-hero h1 {
+      font-size: clamp(2.2rem, 5vw, 3.4rem);
+      margin-bottom: 16px;
+    }
+
+    .page-hero p {
+      font-size: 1.1rem;
+      max-width: 580px;
+      margin: 0 auto 32px;
+    }
+
+    .breadcrumb {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      color: var(--text-faint);
+      margin-bottom: 24px;
+    }
+
+    .breadcrumb a {
+      color: var(--text-dim);
+      transition: color 0.2s;
+    }
+
+    .breadcrumb a:hover {
+      color: var(--gold);
+    }
+
+    .filter-bar {
+      padding: 28px 0;
+      border-bottom: 1px solid var(--border);
+      background: var(--bg-2);
+      position: sticky;
+      top: 72px;
+      z-index: 100;
+    }
+
+    .filter-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .filter-tabs {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .filter-tab {
+      padding: 8px 18px;
+      border-radius: 100px;
+      font-size: 0.83rem;
+      font-weight: 500;
+      color: var(--text-dim);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .filter-tab:hover {
+      color: #fff;
+      border-color: rgba(255, 255, 255, 0.2);
+    }
+
+    .filter-tab.active {
+      background: var(--gold-glass);
+      border-color: var(--border-gold);
+      color: var(--gold);
+    }
+
+    .search-wrap {
+      position: relative;
+    }
+
+    .search-input {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 9px 18px 9px 40px;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--text);
+      outline: none;
+      width: 220px;
+      transition: all 0.2s;
+    }
+
+    .search-input::placeholder {
+      color: var(--text-faint);
+    }
+
+    .search-input:focus {
+      border-color: var(--border-gold);
+      background: var(--surface-2);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 14px;
+      top: 50%;
+      transform: translateY(-50%);
+      color: var(--text-faint);
+      font-size: 0.85rem;
+      pointer-events: none;
+    }
+
+    .featured-post {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr;
+      gap: 0;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      margin-top: 56px;
+      transition: border-color 0.3s;
+    }
+
+    .featured-post:hover {
+      border-color: var(--border-gold);
+    }
+
+    .featured-thumb {
+      position: relative;
+      min-height: 380px;
+      background: var(--bg-3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .featured-thumb-emoji {
+      font-size: 6rem;
+      opacity: 0.15;
+    }
+
+    .featured-thumb-gradient {
+      position: absolute;
+      inset: 0;
+    }
+
+    .featured-cat-badge {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background: var(--gold);
+      color: #0a0a0e;
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 100px;
+    }
+
+    .featured-label {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background: rgba(245, 197, 66, 0.15);
+      border: 1px solid var(--border-gold);
+      color: var(--gold);
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 100px;
+    }
+
+    .featured-body {
+      padding: 44px 40px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .featured-meta {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      font-size: 0.8rem;
+      color: var(--text-faint);
+      margin-bottom: 18px;
+    }
+
+    .featured-meta span {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+    }
+
+    .featured-body h2 {
+      font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+
+    .featured-body p {
+      font-size: 0.95rem;
+      line-height: 1.72;
+      margin-bottom: 28px;
+    }
+
+    .featured-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+
+    .author-av {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2a2a4a, #3a3a6a);
+      border: 2px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 0.85rem;
+      color: var(--gold);
+      flex-shrink: 0;
+    }
+
+    .author-name {
+      font-weight: 600;
+      font-size: 0.88rem;
+      color: #fff;
+    }
+
+    .author-role {
+      font-size: 0.75rem;
+      color: var(--text-faint);
+    }
+
+    .read-more-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--gold);
+      margin-bottom: 20px;
+      transition: gap 0.2s;
+    }
+
+    .featured-post:hover .read-more-btn {
+      gap: 12px;
+    }
+
+    .blog-layout {
+      display: grid;
+      grid-template-columns: 1fr 320px;
+      gap: 40px;
+      margin-top: 60px;
+      align-items: start;
+    }
+
+    .blog-posts-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .post-card {
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      border: 1px solid var(--border);
+      overflow: hidden;
+      transition: all 0.35s var(--ease-out);
+    }
+
+    .post-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-5px);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+    }
+
+    .post-thumb {
+      height: 160px;
+      position: relative;
+      background: var(--bg-3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    .post-thumb-emoji {
+      font-size: 3rem;
+      opacity: 0.2;
+    }
+
+    .post-cat {
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      background: var(--gold);
+      color: #0a0a0e;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 3px 10px;
+      border-radius: 100px;
+    }
+
+    .post-body {
+      padding: 22px;
+    }
+
+    .post-meta {
+      display: flex;
+      gap: 12px;
+      font-size: 0.75rem;
+      color: var(--text-faint);
+      margin-bottom: 10px;
+    }
+
+    .post-card h3 {
+      font-size: 0.98rem;
+      margin-bottom: 8px;
+      line-height: 1.4;
+      font-weight: 600;
+    }
+
+    .post-card p {
+      font-size: 0.84rem;
+      line-height: 1.65;
+    }
+
+    .post-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 16px;
+      padding-top: 14px;
+      border-top: 1px solid var(--border);
+    }
+
+    .post-author-mini {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.78rem;
+      color: var(--text-dim);
+    }
+
+    .post-av-mini {
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2a2a4a, #3a3a6a);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.62rem;
+      font-weight: 700;
+      color: var(--gold);
+      border: 1px solid var(--border-gold);
+    }
+
+    .post-read {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--gold);
+      transition: gap 0.2s;
+    }
+
+    .post-card:hover .post-read {
+      gap: 9px;
+    }
+
+    .blog-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+
+    .sidebar-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+    }
+
+    .sidebar-title {
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--text-faint);
+      margin-bottom: 18px;
+    }
+
+    .newsletter-form {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 14px;
+    }
+
+    .newsletter-input {
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 11px 14px;
+      font-family: var(--font-body);
+      font-size: 0.85rem;
+      color: var(--text);
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .newsletter-input:focus {
+      border-color: var(--border-gold);
+    }
+
+    .newsletter-input::placeholder {
+      color: var(--text-faint);
+    }
+
+    .cat-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .cat-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 9px 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .cat-item:last-child {
+      border-bottom: none;
+    }
+
+    .cat-item:hover .cat-name {
+      color: var(--gold);
+    }
+
+    .cat-name {
+      font-size: 0.88rem;
+      color: var(--text-dim);
+    }
+
+    .cat-count {
+      font-size: 0.75rem;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      border-radius: 100px;
+      padding: 2px 9px;
+      color: var(--text-faint);
+    }
+
+    .popular-list {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .popular-item {
+      display: flex;
+      gap: 12px;
+      cursor: pointer;
+    }
+
+    .popular-num {
+      font-family: var(--font-head);
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: rgba(245, 197, 66, 0.2);
+      flex-shrink: 0;
+      line-height: 1.1;
+      width: 24px;
+    }
+
+    .popular-item:hover .popular-num {
+      color: var(--gold);
+    }
+
+    .popular-title {
+      font-size: 0.85rem;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.4;
+    }
+
+    .popular-item:hover .popular-title {
+      color: var(--gold);
+    }
+
+    .popular-meta {
+      font-size: 0.72rem;
+      color: var(--text-faint);
+      margin-top: 3px;
+    }
+
+    .tags-cloud {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .tag {
+      padding: 5px 12px;
+      border-radius: 100px;
+      background: var(--surface-2);
+      border: 1px solid var(--border);
+      font-size: 0.78rem;
+      color: var(--text-dim);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .tag:hover {
+      background: var(--gold-glass);
+      border-color: var(--border-gold);
+      color: var(--gold);
+    }
+
+    .load-more-wrap {
+      text-align: center;
+      margin-top: 40px;
+    }
+
+    .article-preview {
+      background: var(--bg-2);
+      border-top: 1px solid var(--border);
+      padding: 80px 0;
+    }
+
+    .article-inner {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .article-header {
+      margin-bottom: 40px;
+    }
+
+    .article-cats {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 18px;
+    }
+
+    .article-cat {
+      background: var(--gold-glass);
+      border: 1px solid var(--border-gold);
+      color: var(--gold);
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 4px 12px;
+      border-radius: 100px;
+    }
+
+    .article-header h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      margin-bottom: 16px;
+    }
+
+    .article-header-meta {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .article-author {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .article-av {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2a2a4a, #4a4a8a);
+      border: 2px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .article-author-info .name {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: #fff;
+    }
+
+    .article-author-info .role {
+      font-size: 0.75rem;
+      color: var(--text-faint);
+    }
+
+    .article-header-meta-items {
+      display: flex;
+      gap: 16px;
+    }
+
+    .article-header-meta-items span {
+      font-size: 0.8rem;
+      color: var(--text-faint);
+    }
+
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius);
+      padding: 22px 24px;
+      margin: 32px 0;
+    }
+
+    .toc-title {
+      font-family: var(--font-body);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 14px;
+    }
+
+    .toc-list {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      counter-reset: toc;
+    }
+
+    .toc-item {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 0.88rem;
+      color: var(--text-dim);
+      cursor: pointer;
+      transition: color 0.2s;
+    }
+
+    .toc-item:hover {
+      color: var(--gold);
+    }
+
+    .toc-num {
+      font-family: var(--font-head);
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--gold);
+      width: 18px;
+      flex-shrink: 0;
+    }
+
+    .article-body h3 {
+      font-size: 1.25rem;
+      margin: 32px 0 14px;
+      font-weight: 700;
+    }
+
+    .article-body p {
+      font-size: 0.97rem;
+      line-height: 1.8;
+      margin-bottom: 18px;
+      color: var(--text);
+    }
+
+    .article-body blockquote {
+      border-left: 3px solid var(--gold);
+      padding: 16px 24px;
+      background: var(--gold-glass);
+      border-radius: 0 12px 12px 0;
+      margin: 24px 0;
+      font-style: italic;
+      font-size: 1rem;
+      color: var(--text);
+    }
+
+    .author-box {
+      display: flex;
+      gap: 22px;
+      background: var(--surface);
+      border: 1px solid var(--border-gold);
+      border-radius: var(--radius-lg);
+      padding: 28px;
+      margin-top: 48px;
+      align-items: flex-start;
+    }
+
+    .author-box-av {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #2a2a4a, #4a4a8a);
+      border: 2px solid var(--border-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.4rem;
+      font-weight: 800;
+      color: var(--gold);
+      flex-shrink: 0;
+      font-family: var(--font-head);
+    }
+
+    .author-box-name {
+      font-size: 1.05rem;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .author-box-role {
+      font-size: 0.8rem;
+      color: var(--gold);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    .author-box p {
+      font-size: 0.88rem;
+      margin: 0;
+    }
+
+    .related-section {
+      margin-top: 56px;
+    }
+
+    .related-section h3 {
+      font-size: 1.2rem;
+      margin-bottom: 22px;
+    }
+
+    .related-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .related-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 20px;
+      transition: all 0.3s;
+      cursor: pointer;
+    }
+
+    .related-card:hover {
+      border-color: var(--border-gold);
+      transform: translateY(-3px);
+    }
+
+    .related-cat {
+      font-size: 0.68rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 8px;
+    }
+
+    .related-card h4 {
+      font-size: 0.9rem;
+      font-weight: 600;
+      line-height: 1.4;
+      margin-bottom: 6px;
+    }
+
+    .related-card span {
+      font-size: 0.75rem;
+      color: var(--text-faint);
+    }
+
+    @media (max-width: 1024px) {
+      .blog-layout {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-sidebar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .featured-post {
+        grid-template-columns: 1fr;
+      }
+
+      .featured-thumb {
+        min-height: 220px;
+      }
+
+      .blog-posts-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .blog-sidebar {
+        grid-template-columns: 1fr;
+      }
+
+      .related-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .author-box {
+        flex-direction: column;
+      }
+    }
+
+    .nav-logo img,
+    .footer-logo-img {
+      height: 36px;
+      width: auto;
+      display: block;
+    }
+
+    .footer-brand .nav-logo {
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .post-card[hidden] {
+      display: none;
+    }
+
+    .no-posts-message {
+      display: none;
+      text-align: center;
+      padding: 28px;
+      margin-top: 24px;
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      color: var(--text-dim);
+    }
+
+    .no-posts-message.show {
+      display: block;
+    }
+  </style>
+  <link href="assets/images/favicon.webp" rel="apple-touch-icon" />
+</head>
+
+<body>
+  <header>
+    <nav aria-label="Main navigation" id="navbar">
+      <div class="container">
+        <div class="nav-inner">
+          <a aria-label="Aevonix Home" class="nav-logo" href="index">
+            <img alt="Aevonix digital growth agency logo" class="nav-logo-img" src="assets/images/logo.webp" />
+            <span>Aevo<span class="span">nix</span></span>
+          </a>
+          <ul class="nav-links" role="list">
+            <li><a href="index">Home</a></li>
+            <li><a href="about">About</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="faq">FAQ</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+          <div class="nav-cta">
+            <a class="btn btn-ghost btn-sm" href="contact">Talk to Us</a>
+            <a class="btn btn-primary btn-sm" href="services">Get Started →</a>
+          </div>
+          <button aria-controls="navMobile" aria-expanded="false" aria-label="Toggle mobile menu" class="nav-toggle"
+            id="navToggle">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+      <nav aria-label="Mobile navigation" class="nav-mobile" id="navMobile">
+        <a href="index">Home</a>
+        <a href="about">About</a>
+        <a href="services">Services</a>
+        <a href="blog">Blog</a>
+        <a href="faq">FAQ</a>
+        <a href="contact">Contact</a>
+      </nav>
+    </nav>
+  </header>
+  <main>
+    <section aria-labelledby="blog-headline" class="page-hero">
+      <div aria-hidden="true" class="page-hero-grid"></div>
+      <div class="container">
+        <div class="page-hero-inner animate-fade-up">
+          <nav aria-label="Breadcrumb" class="breadcrumb">
+            <a href="index">Home</a><span aria-hidden="true">›</span><span aria-current="page">Blog</span>
+          </nav>
+          <span class="section-label">The Aevonix Blog</span>
+          <h1 id="blog-headline">Digital Insights That <span class="text-gold">Drive Growth</span></h1>
+          <p>Practical guides, case studies and strategy notes on SEO, web development, UI UX design and digital growth,
+            written for brands that want real results.</p>
+        </div>
+      </div>
+    </section>
+    <nav aria-label="Blog categories" class="filter-bar">
+      <div class="container">
+        <div class="filter-inner">
+          <div class="filter-tabs" role="tablist">
+            <button aria-selected="true" class="filter-tab active" role="tab">All Posts</button>
+            <button aria-selected="false" class="filter-tab" role="tab">SEO</button>
+            <button aria-selected="false" class="filter-tab" role="tab">Development</button>
+            <button aria-selected="false" class="filter-tab" role="tab">Design</button>
+            <button aria-selected="false" class="filter-tab" role="tab">Strategy</button>
+            <button aria-selected="false" class="filter-tab" role="tab">Case Studies</button>
+          </div>
+          <div class="search-wrap">
+            <span aria-hidden="true" class="search-icon">🔍</span>
+            <input aria-label="Search blog posts" class="search-input" placeholder="Search articles..." type="search" />
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section aria-labelledby="posts-heading" class="section-pad">
+      <div class="container">
+        <h2 class="sr-only" id="posts-heading">Blog Posts</h2>
+        <article aria-label="Featured article" class="featured-post reveal" data-category="seo"
+          data-title="core web vitals performance seo website speed">
+          <div class="featured-thumb">
+            <div aria-hidden="true" class="featured-thumb-emoji">🔍</div>
+            <div class="featured-thumb-gradient"
+              style="background:linear-gradient(135deg,rgba(245,197,66,0.18),rgba(6,6,8,0.85))"></div>
+            <span class="featured-cat-badge">SEO</span>
+            <span class="featured-label">✦ Featured</span>
+          </div>
+          <div class="featured-body">
+            <div class="featured-meta">
+              <span>📅 May 8, 2026</span>
+              <span>⏱ 8 min read</span>
+              <span>👁 12.4k views</span>
+            </div>
+            <h2>Core Web Vitals 2026: The Practical Guide to Faster Rankings and Better Conversions</h2>
+            <p>Website speed, interaction quality and layout stability still shape how people experience your brand.
+              This guide explains the practical fixes that help your pages load faster, feel smoother and support
+              stronger search performance.</p>
+            <a class="read-more-btn" href="#article-preview">Read Full Article →</a>
+            <div class="featured-author">
+              <div aria-hidden="true" class="author-av">ZM</div>
+              <div>
+                <div class="author-name">Aevonix Team</div>
+                <div class="author-role">SEO and Growth Team · Aevonix</div>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="blog-layout">
+          <div>
+            <div class="blog-posts-grid">
+              <article class="post-card reveal reveal-delay-1" data-category="strategy">
+                <div class="post-thumb">
+                  <div aria-hidden="true" class="post-thumb-emoji">💡</div>
+                  <div
+                    style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(100,60,245,0.18),rgba(6,6,8,0.8))">
+                  </div>
+                  <span class="post-cat">Strategy</span>
+                </div>
+                <div class="post-body">
+                  <div class="post-meta"><span>May 2, 2026</span><span>7 min read</span></div>
+                  <h3>The Brand Moat: How to Make Your Business Impossible to Copy</h3>
+                  <p>Strategic brand differentiation frameworks from 6 years of agency experience.</p>
+                  <div class="post-footer">
+                    <div class="post-author-mini">
+                      <div class="post-av-mini">NP</div>Nina Patel
+                    </div>
+                    <span class="post-read">Read →</span>
+                  </div>
+                </div>
+              </article>
+              <article class="post-card reveal reveal-delay-2" data-category="development">
+                <div class="post-thumb">
+                  <div aria-hidden="true" class="post-thumb-emoji">⚡</div>
+                  <div
+                    style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(245,100,66,0.18),rgba(6,6,8,0.8))">
+                  </div>
+                  <span class="post-cat">Dev</span>
+                </div>
+                <div class="post-body">
+                  <div class="post-meta"><span>Apr 28, 2026</span><span>6 min read</span></div>
+                  <h3>Next.js 15 + ISR: Build Sites That Score 100 on Lighthouse Every Time</h3>
+                  <p>Complete performance playbook for production-grade Next.js sites.</p>
+                  <div class="post-footer">
+                    <div class="post-author-mini">
+                      <div class="post-av-mini">MR</div>Marcus Reid
+                    </div>
+                    <span class="post-read">Read →</span>
+                  </div>
+                </div>
+              </article>
+              <article class="post-card reveal reveal-delay-1" data-category="design">
+                <div class="post-thumb">
+                  <div aria-hidden="true" class="post-thumb-emoji">🎨</div>
+                  <div
+                    style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(245,66,197,0.18),rgba(6,6,8,0.8))">
+                  </div>
+                  <span class="post-cat">Design</span>
+                </div>
+                <div class="post-body">
+                  <div class="post-meta"><span>Apr 20, 2026</span><span>5 min read</span></div>
+                  <h3>The 7 UI Principles Behind Every High-Converting Landing Page</h3>
+                  <p>Dissecting 50 landing pages that convert at 4%+ to extract what actually works.</p>
+                  <div class="post-footer">
+                    <div class="post-author-mini">
+                      <div class="post-av-mini">AL</div>Aria Liu
+                    </div>
+                    <span class="post-read">Read →</span>
+                  </div>
+                </div>
+              </article>
+              <article class="post-card reveal reveal-delay-2" data-category="case studies">
+                <div class="post-thumb">
+                  <div aria-hidden="true" class="post-thumb-emoji">📈</div>
+                  <div
+                    style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(66,197,100,0.18),rgba(6,6,8,0.8))">
+                  </div>
+                  <span class="post-cat">Case Study</span>
+                </div>
+                <div class="post-body">
+                  <div class="post-meta"><span>Apr 12, 2026</span><span>9 min read</span></div>
+                  <h3>How We 14x'd a SaaS Company's Organic Traffic in 8 Months</h3>
+                  <p>Full case study: the exact SEO strategy, tools, and timeline we used.</p>
+                  <div class="post-footer">
+                    <div class="post-author-mini">
+                      <div class="post-av-mini">ZM</div>Aevonix Team
+                    </div>
+                    <span class="post-read">Read →</span>
+                  </div>
+                </div>
+              </article>
+              <article class="post-card reveal reveal-delay-1" data-category="seo">
+                <div class="post-thumb">
+                  <div aria-hidden="true" class="post-thumb-emoji">🔗</div>
+                  <div
+                    style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(197,197,66,0.18),rgba(6,6,8,0.8))">
+                  </div>
+                  <span class="post-cat">SEO</span>
+                </div>
+                <div class="post-body">
+                  <div class="post-meta"><span>Apr 5, 2026</span><span>6 min read</span></div>
+                  <h3>Link Building in 2025: What Works, What's Dead, and What's Next</h3>
+                  <p>The complete state of link acquisition in a post-Helpful Content world.</p>
+                  <div class="post-footer">
+                    <div class="post-author-mini">
+                      <div class="post-av-mini">ZM</div>Aevonix Team
+                    </div>
+                    <span class="post-read">Read →</span>
+                  </div>
+                </div>
+              </article>
+              <article class="post-card reveal reveal-delay-2" data-category="branding">
+                <div class="post-thumb">
+                  <div aria-hidden="true" class="post-thumb-emoji">✦</div>
+                  <div
+                    style="position:absolute;inset:0;background:linear-gradient(135deg,rgba(197,66,66,0.18),rgba(6,6,8,0.8))">
+                  </div>
+                  <span class="post-cat">Branding</span>
+                </div>
+                <div class="post-body">
+                  <div class="post-meta"><span>Mar 28, 2026</span><span>5 min read</span></div>
+                  <h3>Logo Psychology: Why Your Visual Identity Is Costing You Clients</h3>
+                  <p>The neuroscience behind brand perception and what your logo signals.</p>
+                  <div class="post-footer">
+                    <div class="post-author-mini">
+                      <div class="post-av-mini">AL</div>Aria Liu
+                    </div>
+                    <span class="post-read">Read →</span>
+                  </div>
+                </div>
+              </article>
+            </div>
+            <div class="no-posts-message" id="noPostsMessage">No articles found for this filter. Try another category or
+              search term.</div>
+            <div class="load-more-wrap reveal">
+              <button class="btn btn-ghost"
+                onclick="this.textContent='No more posts to load ✓';this.disabled=true;this.style.opacity='0.5'"
+                style="margin-top:8px">Load More Articles</button>
+            </div>
+          </div>
+          <aside aria-label="Blog sidebar" class="blog-sidebar">
+            <div class="sidebar-card reveal">
+              <div class="sidebar-title">Newsletter</div>
+              <p style="font-size:0.85rem;margin-bottom:0">Get our best insights delivered to your inbox. No spam, ever.
+              </p>
+              <form aria-label="Newsletter signup" class="newsletter-form contact-form">
+                <input aria-label="Email address" class="newsletter-input" placeholder="your@email.com" required=""
+                  type="email" />
+                <button class="btn btn-primary" style="justify-content:center;width:100%" type="submit">Subscribe
+                  →</button>
+              </form>
+            </div>
+            <div class="sidebar-card reveal reveal-delay-1">
+              <div class="sidebar-title">Categories</div>
+              <nav aria-label="Blog categories" class="cat-list">
+                <div class="cat-item"><span class="cat-name">SEO &amp; Search</span><span class="cat-count">18</span>
+                </div>
+                <div class="cat-item"><span class="cat-name">Web Development</span><span class="cat-count">12</span>
+                </div>
+                <div class="cat-item"><span class="cat-name">UI/UX Design</span><span class="cat-count">9</span></div>
+                <div class="cat-item"><span class="cat-name">Digital Strategy</span><span class="cat-count">11</span>
+                </div>
+                <div class="cat-item"><span class="cat-name">Branding</span><span class="cat-count">7</span></div>
+                <div class="cat-item"><span class="cat-name">Case Studies</span><span class="cat-count">6</span></div>
+              </nav>
+            </div>
+            <div class="sidebar-card reveal reveal-delay-2">
+              <div class="sidebar-title">Popular Posts</div>
+              <div class="popular-list">
+                <div class="popular-item">
+                  <span class="popular-num">01</span>
+                  <div>
+                    <div class="popular-title">Core Web Vitals 2025 Complete Guide</div>
+                    <div class="popular-meta">12.4k views · 8 min</div>
+                  </div>
+                </div>
+                <div class="popular-item">
+                  <span class="popular-num">02</span>
+                  <div>
+                    <div class="popular-title">How We 14x'd Organic Traffic in 8 Months</div>
+                    <div class="popular-meta">8.2k views · 9 min</div>
+                  </div>
+                </div>
+                <div class="popular-item">
+                  <span class="popular-num">03</span>
+                  <div>
+                    <div class="popular-title">7 UI Principles Behind High-Converting Pages</div>
+                    <div class="popular-meta">6.7k views · 5 min</div>
+                  </div>
+                </div>
+                <div class="popular-item">
+                  <span class="popular-num">04</span>
+                  <div>
+                    <div class="popular-title">Link Building in 2025: What Still Works</div>
+                    <div class="popular-meta">5.1k views · 6 min</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-card reveal reveal-delay-3">
+              <div class="sidebar-title">Tags</div>
+              <div class="tags-cloud">
+                <span class="tag">SEO</span><span class="tag">Next.js</span><span class="tag">Tailwind</span>
+                <span class="tag">Branding</span><span class="tag">CRO</span><span class="tag">Figma</span>
+                <span class="tag">Lighthouse</span><span class="tag">Schema</span><span class="tag">Core Web
+                  Vitals</span>
+                <span class="tag">Link Building</span><span class="tag">UX</span><span class="tag">Performance</span>
+              </div>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="article-heading" class="article-preview" id="article-preview">
+      <div class="container">
+        <div class="article-inner">
+          <header class="article-header reveal">
+            <div class="article-cats">
+              <span class="article-cat">SEO</span>
+              <span class="article-cat">Performance</span>
+            </div>
+            <h2 id="article-heading">Core Web Vitals 2026: The Practical Guide to Faster Rankings and Better Conversions
+            </h2>
+            <div class="article-header-meta">
+              <div class="article-author">
+                <div aria-hidden="true" class="article-av">ZM</div>
+                <div class="article-author-info">
+                  <div class="name">Aevonix Team</div>
+                  <div class="role">SEO and Growth Team</div>
+                </div>
+              </div>
+              <div class="article-header-meta-items">
+                <span>📅 May 8, 2026</span>
+                <span>⏱ 8 min read</span>
+                <span>👁 12,400 views</span>
+              </div>
+            </div>
+          </header>
+          <nav aria-label="Table of contents" class="toc reveal">
+            <div class="toc-title">Table of Contents</div>
+            <div class="toc-list" role="list">
+              <div class="toc-item"><span class="toc-num">01</span>What Changed in Google's 2025 Algorithm</div>
+              <div class="toc-item"><span class="toc-num">02</span>The New Core Web Vitals Thresholds</div>
+              <div class="toc-item"><span class="toc-num">03</span>LCP Optimization: 5 Techniques That Work</div>
+              <div class="toc-item"><span class="toc-num">04</span>Eliminating CLS: The Complete Checklist</div>
+              <div class="toc-item"><span class="toc-num">05</span>How to Monitor and Maintain Your Scores</div>
+            </div>
+          </nav>
+          <div class="article-body reveal">
+            <h3>What Changed in Google's 2025 Algorithm</h3>
+            <p>A fast website is not only a technical win. It improves user trust, reduces friction and supports better
+              search visibility. Core Web Vitals give your team a clear way to measure whether visitors are getting a
+              smooth experience.</p>
+            <p>For growing brands, the goal is simple: pages should load quickly, respond instantly and stay visually
+              stable. That means optimizing images, reducing unnecessary scripts and designing layouts that do not jump
+              around while loading.</p>
+            <blockquote>"Speed is not just a technical detail. It is the invisible conversion layer that shapes trust
+              before your copy even gets read." — Aevonix Team</blockquote>
+            <h3>The New Core Web Vitals Thresholds</h3>
+            <p>The most important metrics to watch are Largest Contentful Paint, Interaction to Next Paint and
+              Cumulative Layout Shift. Together, they show how fast the main content appears, how responsive the page
+              feels and how stable the layout remains.</p>
+            <h3>LCP Optimization: 5 Techniques That Work</h3>
+            <p>The Largest Contentful Paint measures how quickly the largest element in your viewport loads. For most
+              sites, this is a hero image or heading. The five highest-impact optimizations we've found are: preloading
+              the LCP image, using WebP with proper srcset attributes, implementing a CDN with edge caching, deferring
+              non-critical CSS, and eliminating render-blocking resources above the fold.</p>
+          </div>
+          <div class="author-box reveal">
+            <div aria-hidden="true" class="author-box-av">ZM</div>
+            <div>
+              <div class="author-box-name">Aevonix Team</div>
+              <div class="author-box-role">SEO and Growth Team, Aevonix</div>
+              <p>The Aevonix team shares practical lessons from SEO, web development, UI UX design and branding projects
+                built for ambitious digital brands.</p>
+            </div>
+          </div>
+          <div class="related-section reveal">
+            <h3>Related Articles</h3>
+            <div class="related-grid">
+              <div class="related-card">
+                <div class="related-cat">Performance</div>
+                <h4>Next.js 15 + ISR: Build Sites That Score 100 on Lighthouse</h4>
+                <span>Apr 28, 2026 · 6 min read</span>
+              </div>
+              <div class="related-card">
+                <div class="related-cat">SEO</div>
+                <h4>Link Building in 2025: What Works, What's Dead</h4>
+                <span>Apr 5, 2026 · 6 min read</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section aria-labelledby="blog-cta-heading" class="section-pad text-center" style="background:var(--bg)">
+      <div aria-hidden="true" class="glow-blob"
+        style="width:400px;height:300px;top:50%;left:50%;transform:translate(-50%,-50%);background:radial-gradient(circle,rgba(245,197,66,0.08),transparent 65%)">
+      </div>
+      <div class="container reveal" style="position:relative;z-index:1">
+        <span class="section-label" style="justify-content:center">Work With Us</span>
+        <h2 class="section-heading" id="blog-cta-heading">Ready to <span class="text-gold">Grow</span> Your Business?
+        </h2>
+        <p class="section-sub" style="margin:0 auto 32px">Let's apply these strategies directly to your site — with a
+          free audit.</p>
+        <div style="display:flex;justify-content:center;gap:14px;flex-wrap:wrap">
+          <a class="btn btn-primary" href="contact">Get a Free SEO Audit →</a>
+          <a class="btn btn-ghost" href="services">View Services</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a aria-label="Aevonix Home" class="nav-logo footer-logo" href="index">
+            <img alt="Aevonix digital growth agency logo" class="nav-logo-img" src="assets/images/logo.webp" />
+            <span>Aevo<span class="span">nix</span></span>
+          </a>
+          <p>Aevonix helps ambitious brands grow with SEO, web development, UI UX design, branding and performance
+            focused digital strategy.</p>
+          <div aria-label="Social media links" class="footer-socials">
+            <a aria-label="Aevonix WhatsApp" class="social-link" href="https://wa.me/923214086800"
+              rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+            <a aria-label="Aevonix Facebook" class="social-link"
+              href="https://www.facebook.com/profile.php?id=61585100560566" rel="noopener noreferrer" target="_blank"><i
+                class="fa-brands fa-facebook"></i></a>
+            <a aria-label="Aevonix Instagram" class="social-link" href="https://www.instagram.com/codvion/"
+              rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            <a aria-label="Aevonix LinkedIn" class="social-link" href="https://www.linkedin.com/in/codvion/"
+              rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a aria-label="Aevonix YouTube" class="social-link" href="https://www.youtube.com/@codvion_pro"
+              rel="noopener noreferrer" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+          </div>
+        </div>
+        <nav aria-label="Company links" class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="about">About Us</a></li>
+            <li><a href="services">Services</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="contact">Contact</a></li>
+          </ul>
+        </nav>
+        <nav aria-label="Service links" class="footer-col">
+          <h4>Services</h4>
+          <ul>
+            <li><a href="services">SEO Optimization</a></li>
+            <li><a href="services">Web Development</a></li>
+            <li><a href="services">UI UX Design</a></li>
+            <li><a href="services">Branding</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 Aevonix. All rights reserved.</span>
+        <span>Created By <a href="https://codvion.site" rel="noopener noreferrer" target="_blank">CodVion</a></span>
+      </div>
+    </div>
+  </footer>
+  <script defer="" src="main.js"></script>
+</body>
+
+</html>

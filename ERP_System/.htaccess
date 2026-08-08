@@ -1,0 +1,22 @@
+DirectoryIndex index.php
+Options -MultiViews
+
+RewriteEngine On
+
+# Canonical home URL: /index.php and /index go to /
+RewriteCond %{THE_REQUEST} \s/+index\.php[?\s] [NC]
+RewriteRule ^index\.php$ / [R=301,L]
+
+RewriteRule ^index/?$ / [R=301,L]
+
+# Keep clean page URLs slash-free.
+RewriteRule ^([A-Za-z0-9_-]+)/$ /$1 [R=301,L]
+
+# Canonical page URLs: /dashboard.php goes to /dashboard
+RewriteCond %{THE_REQUEST} \s/+([A-Za-z0-9_-]+)\.php[?\s] [NC]
+RewriteRule ^([A-Za-z0-9_-]+)\.php$ /$1 [R=301,L]
+
+# Serve clean URLs from their matching PHP files.
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^([A-Za-z0-9_-]+)/?$ $1.php [L]

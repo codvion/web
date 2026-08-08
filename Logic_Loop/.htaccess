@@ -1,0 +1,14 @@
+# Custom 404 page
+ErrorDocument 404 /404.php
+
+# Enable rewrite engine
+RewriteEngine On
+
+# Agar request kisi existing file ya directory ke liye hai to rewrite mat karo
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Clean URLs for main pages: about, contact, login, register, join, portfolio, etc.
+RewriteRule ^([a-zA-Z0-9_-]+)$ $1.php [L]
+
+RewriteRule ^index(\.php|\.html)?$ https://logicloop.wuaze.com/ [R=301,L]
